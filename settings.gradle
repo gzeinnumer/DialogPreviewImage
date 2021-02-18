@@ -1,2 +1,3 @@
+include ':dpi'
 include ':app'
 rootProject.name = "DialogPreviewImage"
