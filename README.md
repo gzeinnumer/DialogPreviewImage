@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.0.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.0.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -42,7 +42,12 @@ allprojects {
 dependencies {
   ...
   implementation 'com.github.gzeinnumer:DialogPreviewImage:version'
-  implementation 'com.github.gzeinnumer:MyLibDialogFragment:1.0.1'
+
+  implementation 'com.github.gzeinnumer:MyLibDialogFragment:last-vesion'
+  //check on https://github.com/gzeinnumer/MyLibDialogFragment
+
+  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
+  //check on https://github.com/gzeinnumer/SimpleMaterialStyle
 }
 ```
 
@@ -110,6 +115,8 @@ Preview :
 # Version
 - **1.0.0**
   - First Release
+- **1.0.1**
+  - Bug Fixing
 
 ---
 # Contribution
