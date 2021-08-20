@@ -12,9 +12,4 @@
         <item name="colorOnSecondary">@color/white</item>
     </style>
 
-    <style name="DialogStyle" parent="Theme.MaterialComponents.Light.Dialog">
-        <item name="android:windowMinWidthMajor">80%</item>
-        <item name="android:windowMinWidthMinor">80%</item>
-    </style>
-
 </resources>

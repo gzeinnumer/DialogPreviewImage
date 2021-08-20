@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.0.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.0.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -116,6 +116,8 @@ Preview :
 - **1.0.0**
   - First Release
 - **1.0.1**
+  - Bug Fixing
+- **1.0.2**
   - Bug Fixing
 
 ---

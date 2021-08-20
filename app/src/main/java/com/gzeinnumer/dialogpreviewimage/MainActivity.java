@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
 
 //                Bitmap
-            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).show();
+            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).enableZoom().show();
 
 //                Path
 //                new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();

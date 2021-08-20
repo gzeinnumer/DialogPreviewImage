@@ -38,4 +38,5 @@ dependencies {
 
     implementation 'com.github.gzeinnumer:EasyDialogFragment:2.0.0'
     api 'com.otaliastudios:zoomlayout:1.8.0'
+    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.2.3-alpha1'
 }
