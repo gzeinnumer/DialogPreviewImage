@@ -43,8 +43,8 @@ dependencies {
   ...
   implementation 'com.github.gzeinnumer:DialogPreviewImage:version'
 
-  implementation 'com.github.gzeinnumer:MyLibDialogFragment:last-vesion'
-  //check on https://github.com/gzeinnumer/MyLibDialogFragment
+  implementation 'com.github.gzeinnumer:EasyDialogFragment:last-vesion'
+  //check on https://github.com/gzeinnumer/EasyDialogFragment
 
   implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
   //check on https://github.com/gzeinnumer/SimpleMaterialStyle
