@@ -1,6 +1,8 @@
 package com.gzeinnumer.dpi;
 
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -30,6 +32,11 @@ public class DialogPreviewImage extends DialogPreviewImageSetting {
 
     public DialogPreviewImage setImage(Bitmap bitmap) {
         this.bitmap = bitmap;
+        return this;
+    }
+
+    public DialogPreviewImage setImage(ImageView imageView) {
+        this.bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
         return this;
     }
 

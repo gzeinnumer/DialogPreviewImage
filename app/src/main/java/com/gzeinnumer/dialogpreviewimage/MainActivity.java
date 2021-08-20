@@ -26,10 +26,11 @@ public class MainActivity extends AppCompatActivity {
             Glide.with(getApplicationContext()).load(imgUrl).error(R.mipmap.ic_launcher).into(imageView);
         });
         imageView.setOnClickListener(v -> {
-            Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
-
+//            Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
 //                Bitmap
-            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).enableZoom().show();
+//            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).enableZoom().show();
+
+            new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).enableZoom().show();
 
 //                Path
 //                new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();
