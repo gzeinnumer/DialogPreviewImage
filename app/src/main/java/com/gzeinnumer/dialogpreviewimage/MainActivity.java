@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
 //            new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).enableZoom().show();
             String url = "https://gofo-kao-dev.intishaka.com/storage/payment/Pxo8aEMPhQyuhJqECwQc4D2RLHKpwFcBuvUPHFZa.jpeg";
-            new DialogPreviewImage(getSupportFragmentManager()).setImage(url).show();
+//            String url = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
+            new DialogPreviewImage(getSupportFragmentManager()).setImage(url).setContent("Content").show();
 
 //                Path
 //                new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();

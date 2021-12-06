@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.bumptech.glide.Glide;
 import com.gzeinnumer.edf.MyLibDialog;
@@ -24,7 +25,7 @@ public class DialogPreviewImageSetting extends MyLibDialog {
     protected String path = "";
     protected String content = "";
     protected Bitmap bitmap = null;
-    protected int corner = R.drawable.dialog_preview_image;
+    protected int corner = R.drawable.dialog_preview_image_black;
 
     public DialogPreviewImageSetting() {
     }
@@ -36,20 +37,13 @@ public class DialogPreviewImageSetting extends MyLibDialog {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-//        if (enableZoom) {
-//            return inflater.inflate(R.layout.dialog_preview_image_zoom, container, false);
-//        } else {
         return inflater.inflate(R.layout.dialog_preview_image, container, false);
-//        }
     }
 
     @Override
     public void onStart() {
         super.onStart();
-//        if (!enableZoom)
-        setCanvasWidth(0.95);
-//        else
-//            setCanvasWidth(1);
+            setCanvasWidth(1);
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -60,7 +54,7 @@ public class DialogPreviewImageSetting extends MyLibDialog {
         ImageView imageView = view.findViewById(R.id.img);
         TextView textView = view.findViewById(R.id.tv_desc);
 
-        LinearLayout _dialogCanvas = view.findViewById(R.id.dialog_canvas_image_preview);
+        ConstraintLayout _dialogCanvas = view.findViewById(R.id.dialog_canvas_image_preview);
         _dialogCanvas.setBackground(requireActivity().getResources().getDrawable(corner));
 
         if (content.length() > 0) {

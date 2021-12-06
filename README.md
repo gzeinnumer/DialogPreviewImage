@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.2.0-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.2.1-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -131,9 +131,10 @@ Preview :
   - From ImageView
 - **1.1.1**
   - Bug Fixing
-- **1.2.0**
+- **1.2.1**
   - Remove Zoom
   - Add load from URL
+  - Bug Fixing
 
 ---
 # Contribution
