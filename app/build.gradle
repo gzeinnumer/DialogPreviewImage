@@ -39,10 +39,9 @@ dependencies {
 
     implementation project(':dpi')
 
+    implementation 'com.github.gzeinnumer:EasyDialogFragment:2.1.0'
+    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.3.3'
+
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-
-    implementation 'com.github.gzeinnumer:EasyDialogFragment:2.1.0'
-    api 'com.otaliastudios:zoomlayout:1.8.0'
-    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:2.3.3'
 }

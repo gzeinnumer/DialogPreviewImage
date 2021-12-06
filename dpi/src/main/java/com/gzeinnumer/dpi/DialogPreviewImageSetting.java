@@ -16,6 +16,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
 import com.gzeinnumer.edf.MyLibDialog;
 
 public class DialogPreviewImageSetting extends MyLibDialog {
@@ -24,7 +25,6 @@ public class DialogPreviewImageSetting extends MyLibDialog {
     protected String content = "";
     protected Bitmap bitmap = null;
     protected int corner = R.drawable.dialog_preview_image;
-    protected boolean enableZoom = false;
 
     public DialogPreviewImageSetting() {
     }
@@ -36,20 +36,20 @@ public class DialogPreviewImageSetting extends MyLibDialog {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        if (enableZoom) {
-            return inflater.inflate(R.layout.dialog_preview_image_zoom, container, false);
-        } else {
-            return inflater.inflate(R.layout.dialog_preview_image, container, false);
-        }
+//        if (enableZoom) {
+//            return inflater.inflate(R.layout.dialog_preview_image_zoom, container, false);
+//        } else {
+        return inflater.inflate(R.layout.dialog_preview_image, container, false);
+//        }
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        if (!enableZoom)
-            setCanvasWidth(0.95);
-        else
-            setCanvasWidth(1);
+//        if (!enableZoom)
+        setCanvasWidth(0.95);
+//        else
+//            setCanvasWidth(1);
     }
 
     @SuppressLint("UseCompatLoadingForDrawables")
@@ -68,24 +68,32 @@ public class DialogPreviewImageSetting extends MyLibDialog {
             textView.setText(content);
         }
 
-        if (path.length() > 0 && path != null) {
-            Bitmap bmImg = BitmapFactory.decodeFile(path);
-            imageView.setImageBitmap(bmImg);
+        if (path != null) {
+
+            if (path.length() > 0) {
+
+                if (!path.contains("http")) {
+                    Bitmap bmImg = BitmapFactory.decodeFile(path);
+                    imageView.setImageBitmap(bmImg);
+                } else {
+                    Glide.with(imageView)
+                            .load(path)
+                            .into(imageView);
+                }
+            }
         }
 
         if (bitmap != null) {
             imageView.setImageBitmap(bitmap);
         }
 
-        if (enableZoom) {
-            ImageView imgClose = view.findViewById(R.id.btn_close);
-            imgClose.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    getDialog().dismiss();
-                }
-            });
-        }
+        ImageView imgClose = view.findViewById(R.id.btn_close);
+        imgClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getDialog().dismiss();
+            }
+        });
 
         getDialog().setOnKeyListener(new DialogInterface.OnKeyListener() {
             @Override

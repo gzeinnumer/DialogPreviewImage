@@ -45,11 +45,6 @@ public class DialogPreviewImage extends DialogPreviewImageSetting {
         return this;
     }
 
-    public DialogPreviewImage enableZoom() {
-        this.enableZoom = true;
-        return this;
-    }
-
     public void show() {
         this.show(_transaction, DialogPreviewImage.TAG);
     }

@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.1.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.2.0-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
@@ -40,14 +40,18 @@ allprojects {
 
 // build.gradle app/module
 dependencies {
-  ...
-  implementation 'com.github.gzeinnumer:DialogPreviewImage:version'
+    ...
+    implementation 'com.github.gzeinnumer:DialogPreviewImage:version'
 
-  implementation 'com.github.gzeinnumer:EasyDialogFragment:last-vesion'
-  //check on https://github.com/gzeinnumer/EasyDialogFragment
+    implementation 'com.github.gzeinnumer:EasyDialogFragment:last-vesion'
+    //check on https://github.com/gzeinnumer/EasyDialogFragment
 
-  implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
-  //check on https://github.com/gzeinnumer/SimpleMaterialStyle
+    implementation 'com.github.gzeinnumer:SimpleMaterialStyle:last-vesion'
+    //check on https://github.com/gzeinnumer/SimpleMaterialStyle
+
+    //required
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }
 ```
 
@@ -56,12 +60,10 @@ dependencies {
 - [x] [Image From Bitmap](#image-from-bitmap)
 - [x] [Image From Path/File Image](#image-from-pathfile-image)
 - [x] [Add Content Message](#add-content-message)
-- [x] [Enable Zoom Image](#enable-zoom-image)
 
 ---
 # Tech stack and 3rd library
 - [DialogFragment](https://developer.android.com/reference/android/app/DialogFragment)
-- [ZoomLayout](https://github.com/natario1/ZoomLayout)
 
 ---
 # Usage
@@ -85,8 +87,15 @@ new DialogPreviewImage(getSupportFragmentManager()).setImage(path).show();
 ### Image From ImageView
 
 ```java
-String path = "YOUR_IMAGE_PATH";
-new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).enableZoom().show();
+new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).show();
+```
+
+#
+### Image From Internet
+
+```java
+String url = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
+new DialogPreviewImage(getSupportFragmentManager()).setImage(url).show();
 ```
 
 #
@@ -94,15 +103,6 @@ new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).enableZo
 ```java
 new DialogPreviewImage(getSupportFragmentManager())
     .setContent("ini content")
-    ...
-    .show();
-```
-
-#
-### Enable Zoom Image
-```java
-new DialogPreviewImage(getSupportFragmentManager())
-    .enableZoom()
     ...
     .show();
 ```
@@ -131,6 +131,9 @@ Preview :
   - From ImageView
 - **1.1.1**
   - Bug Fixing
+- **1.2.0**
+  - Remove Zoom
+  - Add load from URL
 
 ---
 # Contribution
