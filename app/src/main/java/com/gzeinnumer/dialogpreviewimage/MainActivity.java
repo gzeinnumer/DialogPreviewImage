@@ -1,6 +1,9 @@
 package com.gzeinnumer.dialogpreviewimage;
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -17,30 +20,38 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageView imageView = findViewById(R.id.img);
-        Button btn = findViewById(R.id.btn);
+        Button btnLoad = findViewById(R.id.btn);
+        Button btnExample1 = findViewById(R.id.btn_example2);
+        Button btnExample2 = findViewById(R.id.btn_example3);
 
-        btn.setOnClickListener(v -> {
+        btnLoad.setOnClickListener(v -> {
             String imgUrl = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
             Glide.with(getApplicationContext()).load(imgUrl).error(R.mipmap.ic_launcher).into(imageView);
         });
         imageView.setOnClickListener(v -> {
 //            Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
-//                Bitmap
-//            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).enableZoom().show();
+//            new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).show();
 
-//            new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).enableZoom().show();
-            String url = "https://gofo-kao-dev.intishaka.com/storage/payment/Pxo8aEMPhQyuhJqECwQc4D2RLHKpwFcBuvUPHFZa.jpeg";
-//            String url = "https://avatars3.githubusercontent.com/u/45892408?s=460&u=94158c6479290600dcc39bc0a52c74e4971320fc&v=4";
-            new DialogPreviewImage(getSupportFragmentManager()).setImage(url).setContent("Content").show();
+            String url = "https://avatars.githubusercontent.com/u/45892408?v=4";
+            new DialogPreviewImage(getSupportFragmentManager()).setImage(url).setContent("Content Content").show();
 
-//                Path
-//                new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();
-
-//                Add Content
-//                new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).setContent("ini content").show();
-
-//                Enable Zoom
-//                new DialogPreviewImage(getSupportFragmentManager()).setImage(bitmap).setContent("ini content").enableZoom().show();
+//            new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();
+//            new DialogPreviewImage(getSupportFragmentManager()).setImage("path").setContent("ini content").show();
         });
+        btnExample1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://images.unsplash.com/photo-1568292342316-60aa3d36f4b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80";
+                new DialogPreviewImage(getSupportFragmentManager()).setImage(url).setContent("content").show();
+            }
+        });
+        btnExample2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://cdn.kibrispdr.org/data/walpaper-hp-android-0.jpg";
+                new DialogPreviewImage(getSupportFragmentManager()).setImage(url).show();
+            }
+        });
+
     }
 }

@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -63,9 +62,7 @@ public class DialogPreviewImageSetting extends MyLibDialog {
         }
 
         if (path != null) {
-
             if (path.length() > 0) {
-
                 if (!path.contains("http")) {
                     Bitmap bmImg = BitmapFactory.decodeFile(path);
                     imageView.setImageBitmap(bmImg);
