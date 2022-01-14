@@ -108,9 +108,9 @@ new DialogPreviewImage(getSupportFragmentManager())
 ```
 
 Preview :
-|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example1.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example2.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example3.gif"/>|
-|---|---|---|
-|Image Preview|Add Content Message|Enable Zoom Image|
+|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example1.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example2.gif"/>|
+|---|---|
+|Image Preview|Add Content Message|
 
 ---
 # Example Code/App
