@@ -20,13 +20,22 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ProgressBar
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:progressTint="@color/grey_300"
+                app:layout_constraintBottom_toTopOf="@id/tv_desc"
+                app:layout_constraintLeft_toLeftOf="@id/tv_desc"
+                app:layout_constraintRight_toRightOf="@id/tv_desc"
+                app:layout_constraintTop_toBottomOf="@id/btn_close" />
+
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
                 android:cropToPadding="false"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -39,14 +48,13 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
+                android:minWidth="24dp"
                 android:textAlignment="center"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_close"
-                android:text="___"
-                tools:text="___"
                 tools:visibility="visible" />
 
             <ImageView
@@ -60,9 +68,20 @@
                 android:src="@drawable/close_3"
                 app:layout_constraintBottom_toTopOf="@+id/tv_desc"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/helper1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread_inside"
                 tools:tint="@color/red_500" />
+
+            <LinearLayout
+                android:id="@+id/helper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/btn_close"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.appcompat.widget.LinearLayoutCompat>

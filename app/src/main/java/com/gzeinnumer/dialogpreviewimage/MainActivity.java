@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
             String url = "https://avatars.githubusercontent.com/u/45892408?v=4";
             new DialogPreviewImage(getSupportFragmentManager()).setImage(url).setContent("Content Content").show();
 
+//            new DialogPreviewImage(getSupportFragmentManager()).setImage(imageView).show();
+
 //            new DialogPreviewImage(getSupportFragmentManager()).setImage("path").show();
 //            new DialogPreviewImage(getSupportFragmentManager()).setImage("path").setContent("ini content").show();
         });
