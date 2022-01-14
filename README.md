@@ -7,13 +7,13 @@
 </h1>
 
 <p align="center">
-    <a><img src="https://img.shields.io/badge/Version-1.2.1-brightgreen.svg?style=flat"></a>
+    <a><img src="https://img.shields.io/badge/Version-1.2.2-brightgreen.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/ID-gzeinnumer-blue.svg?style=flat"></a>
     <a><img src="https://img.shields.io/badge/Java-Suport-green?logo=java&style=flat"></a>
     <a><img src="https://img.shields.io/badge/kotlin-Suport-green?logo=kotlin&style=flat"></a>
     <a href="https://github.com/gzeinnumer"><img src="https://img.shields.io/github/followers/gzeinnumer?label=follow&style=social"></a>
     <br>
-    <p>Simple.</p>
+    <p>Simple Dialog Preview.</p>
 </p>
 
 ---
@@ -108,9 +108,9 @@ new DialogPreviewImage(getSupportFragmentManager())
 ```
 
 Preview :
-|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example1.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example2.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example3.gif"/>|
-|---|---|---|
-|Image Preview|Add Content Message|Enable Zoom Image|
+|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example1.gif"/>|<img src="https://github.com/gzeinnumer/DialogPreviewImage/blob/master/preview/example2.gif"/>|
+|---|---|
+|Image Preview|Add Content Message|
 
 ---
 # Example Code/App
@@ -134,6 +134,8 @@ Preview :
 - **1.2.1**
   - Remove Zoom
   - Add load from URL
+  - Bug Fixing
+- **1.2.2**
   - Bug Fixing
 
 ---

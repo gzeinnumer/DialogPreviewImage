@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/app/src/main/res/layout/activity_main.xml" value="0.2111111111111111" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/drawable/dialog_preview_image_black.xml" value="0.24114583333333334" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/drawable/dpi_ic_no_image.xml" value="0.23743589743589744" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/drawable/ic_no_image.xml" value="0.23743589743589744" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/drawable/shape_white.xml" value="0.24114583333333334" />
-        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/layout/dialog_preview_image.xml" value="0.22916666666666666" />
+        <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/layout/dialog_preview_image.xml" value="0.9" />
         <entry key="..\:/VIDEO/PEMOGRAMANMOBILE/DialogPreviewImage/dpi/src/main/res/layout/dialog_preview_image_zoom.xml" value="0.22" />
       </map>
     </option>
